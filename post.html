@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3a1e94e0f3.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <header>
+            <nav class="navbar navbar-light fixed-top ps-lg-5 pe-lg-5 ">
+                <div class="container-fluid">
+                    <!-- Iconos izquierdos -->
+                    <div class="container-1 d-flex justify-content-center align-items-center">
+
+                        <button class="navbar-toggler me-1 d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img
+                                src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                                alt="" width="50" height="40"></a>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header d-flex flex-column">
+
+                                <div class="d-flex w-100 justify-content-between align-items-center ">
+                                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h2>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div
+                                    class="collapse__info pt-1 px-3 mt-3 d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="pt-3"><span class="collapse__h2">DEV Community</span> is a community of
+                                        852,499 amazing developers</h2>
+                                    <p class="nav__info">We're a place where coders share, stay up-to-date and grow they
+                                        careers</p>
+                                    <button class="btn container__btn">Create account</button>
+                                    <a href="#" class="container__log">Log in</a>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav mt-3">
+                                    <li class="nav-item p-2 ">
+                                        <i class=""><img src="images/home-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/podcast-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Podcasts</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/cam-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Videos</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/tags-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Tags</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/faq-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Faqs</a>
+                                    </li>
+                                    <li class="nav-item p-2 ">
+                                        <i class=""><img src="images/shop-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Forem Shop</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/sponsors-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Sponsors</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/about-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/contact-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                                <h3 class="mt-3">Other</h3>
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/conduct-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Code of
+                                            Conduct</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/privacy-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <i class=""><img src="images/terms-icon.svg" alt=""></i>
+                                        <a class="nav-link active d-inline" aria-current="page" href="#">Terms of
+                                            use</a>
+                                    </li>
+                                </ul>
+                                <div class="nav__social mt-3 d-flex justify-content-center ">
+                                    <i class="fa-brands fa-twitter nav__social-logo ps-4 pe-4"></i>
+                                    <i class="fa-brands fa-facebook-square nav__social-logo ps-4 pe-4"></i>
+                                    <i class="fa-brands fa-github nav__social-logo ps-4 pe-4"></i>
+                                    <i class="fa-brands fa-instagram-square nav__social-logo ps-4 pe-4"></i>
+                                    <i class="fa-brands fa-twitch nav__social-logo ps-4 pe-4 "></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="nav__search d-flex justify-content-center align-items-center">
+                            <input class="form-control nav__search-inp d-none d-lg-block" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <a class="nav__search-mag d-none d-lg-flex justify-content-center align-items-center ps-3 pe-3"
+                                href="#"><i><img src="images/magnifying-icon.svg" alt=""></i></a>
+                        </div>
+                    </div>
+                    <!--Fin primer contenedor-->
+
+                    <!-- Inicia Segundo contenedor -->
+                    <div class="container-2 d-flex">
+                        <!-- Sección de log -->
+                        <div class="d-flex w-100 align-items-center justify-content-center ">
+                            <a href="#" class="container__log d-none d-lg-block  cont-link m-3">Log in</a>
+                            <a class="d-lg-none me-2 " href="#"><i><img src="images/magnifying-icon.svg"
+                                        alt=""></i></a>
+                            <button class="btn container__btn ">Create account</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--primer columna ocupada en blanco-->
+        <div class="d-lg-flex">
+            <div class="col-12 col-lg-1">
+                <!--iconos side bar-->
+                <div class="d-none d-lg-flex flex-lg-column 
+                  icons">
+                    <a href="#" class="icons__heart fa-regular fa-thumbs-up 
+                d-lg-flex justify-content-lg-center align-items-lg-center"></a>
+                    <a href="#" class="icons__dragon fa-solid fa-dragon 
+                d-lg-flex justify-content-lg-center align-items-lg-center"></a>
+                    <a href="#" class="icons__save fa-regular fa-floppy-disk 
+                d-lg-flex justify-content-lg-center align-items-lg-center"></a>
+                    <a href="#" class="icons__ellipsis fa-solid fa-ellipsis 
+               d-lg-flex justify-content-lg-center align-items-lg-center"></a>
+                </div>
+            </div>
+
+
+            <!--defino que el resto usa 8 columnas-->
+            <div class=" col-12 col-lg-8">
+
+                <!--imagen superior-->
+                <div class="col-12 d-lg-none">
+                    <img class="top-img" src="images/devtoimage.webp" alt="">
+                </div>
+
+                <div class="d-none d-lg-flex col-lg-12">
+                    <img class="top-img-desk" src="images/devtoimage.webp" alt="">
+                </div>
+                <!--wrapper del resto del doc-->
+                <div class="wrapper">
+
+
+                    <!--detalles del post-->
+                    <div class="post-details">
+                        <div class="row">
+                            <!--1ra columna ocupada solo para la info-->
+                            <div class="col-lg-1"></div>
+                            <div class="col-1 col-lg-1">
+                                <img class="post-details__user-img" src="images/User-simon-image.webp"
+                                    alt="">
+                            </div>
+                            <div class="col-10 col-lg-5">
+                                <a class="post-details__user-name" href="#">Simon Egersand 🎈</a>
+                                <p class="post-details__post-info"><small> posted on <time>1 May</time> • Originally
+                                        published
+                                        at
+                                        <a href="#">prplcode.dev</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--texto maybe row aqui-->
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-12 col-lg-10">
+                            <!--caja de titulo-->
+                            <div class="tittle-box">
+                                <h1 class="tittle-box__tittle"> What Skills Make a Great Software Engineer? </h1>
+                                <div class="tittle-box__tags">
+                                    <a class="tittle-box__tags__related1" href="#">#discuss</a>
+                                    <a class="tittle-box__tags__related2" href="#">#programming</a>
+                                    <a class="tittle-box__tags__related3" href="#">#career</a>
+                                </div>
+                            </div>
+
+                            <!--contenedor de texto del post-->
+                            <div class="text-container">
+                                <p>
+                                    Being a software engineer requires you to have many skills.
+                                    In my career I've worked with people from different parts
+                                    of the world with diverse backgrounds and experiences 🌎.
+                                    Some of them I've enjoyed working with, and some of them
+                                    I have not.
+                                </p>
+                                <p>
+                                    Recently I've been thinking about why I like working with
+                                    some more than others. I enjoy working with engineers who
+                                    have these skills:
+                                </p>
+                                <ul>
+                                    <li>🙂 Friendly and easy to communicate with</li>
+                                    <li>👂 Listen to others and try to see things from other perspectives</li>
+                                    <li>✍️ Thorough in their work</li>
+                                    <li>👫 Team player, striving to put the team first</li>
+                                    <li>💪🤙 Strong opinions, loosely held</li>
+                                    <li>👩‍🏫 Wants to learn</li>
+                                    <li>🙋 Asks a lot of questions</li>
+                                </ul>
+                                <p>As you can see these are all soft skills. I'd rather work with
+                                    someone who's not that great of a programmer, but working to be,
+                                    and is a team player, than someone who's a "rockstar programmer"
+                                    who doesn't listen to others.</p>
+                                <p>I see many articles and blog posts about how to improve your
+                                    technical skills, and they are useful, but the soft skills are at
+                                    least as important, if not more! Technical skills are easy to learn
+                                    but the soft skills are harder (talking from personal experience).</p>
+                                <p>So now I'm curios, what skills do you think makes a great software
+                                    engineer? 😊</p>
+                                <p>Want to learn my 5 favorite habits for an engineer? See<a href="#"> this post.</a>
+                                </p>
+                                <p>Originally published at <a href="#">https://prplcode.dev</a></p>
+                            </div>
+                            <!--titulo caja de comentarios-->
+                            <div>
+                                <div class="comment">
+                                    <h2 class="comment__discussion">Discussion (7)</h2>
+                                    <button class="comment__subscribe-btn">Subscribe</button>
+                                </div>
+                            </div>
+                            <!--caja de comentarios-->
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <textarea class="form-control" rows="2"
+                                        placeholder="Add to the discussion"></textarea>
+                                </div>
+                            </div>
+
+                            <!--comentarios-->
+
+                            <div class="container mb-5 mt-5">
+
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="media">
+                                                        <img class="mr-3 rounded-circle" alt=""
+                                                            src="https://i.imgur.com/stD0Q19.jpg" />
+                                                        <div class="media-body">
+                                                            <div class="row">
+                                                                <div class="col-8 d-flex">
+                                                                    <h5>Maria Smantha</h5>
+                                                                    <span>- 2 hours ago</span>
+                                                                </div>
+
+                                                                <div class="col-4">
+
+                                                                    <div class="pull-right reply">
+
+                                                                        <a href="#"><span><i class="fa fa-reply"></i>
+                                                                                reply</span></a>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            It is a long established fact that a reader will be
+                                                            distracted
+                                                            by the readable content of a page.
+
+                                                            <div class="media mt-4">
+                                                                <a class="pr-3" href="#"><img class="rounded-circle"
+                                                                        alt=""
+                                                                        src="https://i.imgur.com/xELPaag.jpg" /></a>
+                                                                <div class="media-body">
+
+                                                                    <div class="row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <h5>Simona Disa</h5>
+                                                                            <span>- 3 hours ago</span>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                    letters, as opposed to using 'Content here, content
+                                                                    here', making it look like readable English.
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="media mt-3">
+                                                                <a class="pr-3" href="#"><img class="rounded-circle"
+                                                                        alt=""
+                                                                        src="https://i.imgur.com/nAcoHRf.jpg" /></a>
+                                                                <div class="media-body">
+                                                                    <div class="row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <h5>John Smith</h5>
+                                                                            <span>- 4 hours ago</span>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                    the majority have suffered alteration in some form,
+                                                                    by
+                                                                    injected humour, or randomised words.
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                    <div class="media mt-4">
+                                                        <img class="mr-3 rounded-circle" alt=""
+                                                            src="https://i.imgur.com/xELPaag.jpg" />
+                                                        <div class="media-body">
+                                                            <div class="row">
+                                                                <div class="col-8 d-flex">
+                                                                    <h5>Shad f</h5>
+                                                                    <span>- 2 hours ago</span>
+                                                                </div>
+
+                                                                <div class="col-4">
+
+                                                                    <div class="pull-right reply">
+
+                                                                        <a href="#"><span><i class="fa fa-reply"></i>
+                                                                                reply</span></a>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            The standard chunk of Lorem Ipsum used since the 1500s is
+                                                            reproduced below for those interested. Sections 1.10.32 and
+                                                            1.10.33.
+                                                            <div class="media mt-4">
+                                                                <a class="pr-3" href="#"><img class="rounded-circle"
+                                                                        alt=""
+                                                                        src="https://i.imgur.com/nUNhspp.jpg" /></a>
+                                                                <div class="media-body">
+
+                                                                    <div class="row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <h5>Andy flowe</h5>
+                                                                            <span>- 5 hours ago</span>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                    Cras sit amet nibh libero, in gravida nulla. Nulla
+                                                                    vel
+                                                                    metus scelerisque ante sollicitudin commodo. Cras
+                                                                    purus
+                                                                    odio, vestibulum in vulputate at, tempus viverra
+                                                                    turpis.
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="media mt-3">
+                                                                <a class="pr-3" href="#"><img class="rounded-circle"
+                                                                        alt=""
+                                                                        src="https://i.imgur.com/HjKTNkG.jpg" /></a>
+                                                                <div class="media-body">
+                                                                    <div class="row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <h5>Simp f</h5>
+                                                                            <span>- 5 hours ago</span>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                    a Latin professor at Hampden-Sydney College in
+                                                                    Virginia,
+                                                                    looked up one of the more obscure Latin words,
+                                                                    consectetur
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="media mt-3">
+                                                                <a class="pr-3" href="#"><img class="rounded-circle"
+                                                                        alt=""
+                                                                        src="https://i.imgur.com/nAcoHRf.jpg" /></a>
+                                                                <div class="media-body">
+                                                                    <div class="row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <h5>John Smith</h5>
+                                                                            <span>- 4 hours ago</span>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                    the majority have suffered alteration in some form,
+                                                                    by
+                                                                    injected humour, or randomised words.
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--info de usuario que en desktop es aside-->
+
+                            <!--<div class="d-lg-flex justify-content-lg-center user-card">
+                            <div class="row">
+                                <div class="col-2 col-lg-1">
+                                    <img class="user-card__user-img2" src="images/User-simon-image.webp"
+                                        alt="">
+                                </div>
+                                <div class="col-10 col-lg-11">
+                                    <a href="#">Simon Egersand</a>
+                                </div>
+                            </div>
+
+                            <button class="user-card__btn-follow">Follow</button>
+                            <div class="user-card__bio">Programming enthusiast & music nerd</div>
+                            <div class="user-card__description">LOCATION</div>
+                            <div class="user-card__info">Stockholm</div>
+                            <div class="user-card__description">WORK</div>
+                            <div class="user-card__info">Sr. Software Engineer @ Spotify</div>
+                            <div class="user-card__description">JOINED</div>
+                            <div class="user-card__info">7 jul 2020</div>
+                        </div>
+
+
+
+                        <div>
+                            <h3 class="more-from">More from <a href="#">Simon Egersand</a></h3>
+                            <a class="related" href="#">How I Built My Own list Type in Python with a String</a>
+                            <a class="related" href="#">Node.js: How To Power Up Your Logging </a>
+                            <a class="related" href="#">JavaScript: How To Power Up Your Logging </a>
+                        </div>-->
+                        </div>
+                    </div>
+                    <!--READ NEXT BOX-->
+                    <div class="read-next">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-12 col-lg-11">
+                                <h2 class="read-next-tittle">Read Next</h2>
+                            </div>
+                            <!--1ra columna ocupada solo para la info-->
+                            <div class="col-lg-1"></div>
+                            <div class="col-2 col-lg-1 read-next">
+                                <img class="read-next__user-img" src="images/user-tina.webp" alt="">
+                            </div>
+                            <div class="col-10 col-lg-10">
+                                <a class="read-next__user-name" href="#">What is the ONE language/framework you refuse
+                                    touse? But...WHY???
+                                    <p class="read-next__post-info">Tina Huynh - 30 abr</p>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-1"></div>
+                            <div class="col-2 col-lg-1">
+                                <img class="read-next__user-img" src="images/user-elsa.webp" alt="">
+                            </div>
+                            <div class="col-10 col-lg-10">
+                                <a class="read-next__user-name" href="#">Is time travel possible?
+                                    <p class="read-next__post-info">Elsa - 17 abr</p>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-1"></div>
+                            <div class="col-2 col-lg-1">
+                                <img class="read-next__user-img" src="images/user-efraim.webp" alt="">
+                            </div>
+                            <div class="col-10 col-lg-10">
+                                <a class="read-next__user-name" href="#">Do you Prototype before coding?
+                                    <p class="read-next__post-info">Efraim - 27 abr</p>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-1"></div>
+                            <div class="col-2 col-lg-1">
+                                <img class="read-next__user-img" src="images/user-michael.webp" alt="">
+                            </div>
+                            <div class="col-10 col-lg-10">
+                                <a class="read-next__user-name" href="#">Programming with python 2
+                                    <p class="read-next__post-info"><small> E.Michael - 30 abr</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--card mobile-->
+            <div class="d-lg-none card p-3 col-lg-12">
+                <div class="card card-user">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="card-user__img" src="images/User-simon-image.webp" alt="imagen">
+                        </div>
+                        <div class="col-10 d-flex align-items-center">
+                            <h3>Simon Egersand</h3>
+                        </div>
+                    </div>
+                    <div class="row p-3 ">
+                        <button type="button" class="btnM">Follow</button>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-12">A Canadian software developer who thinks he's funny. He/Him.</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">LOCATION</div>
+                        <div class="col-6">NY</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">EDUCATION</div>
+                        <div class="6">Mount Allison University</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">WORK</div>
+                        <div class="6">Co-founder at Forem</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">JOINED</div>
+                        <div class="6">26 dic 2015</div>
+                    </div>
+                </div>
+            </div>
+            <!--desktop-->
+            <div class=" d-lg-flex card p-3 col-lg-9 carda">
+
+                <div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="post-details__user-img" src="images/User-simon-image.webp" alt="imagen"
+                                height="40px" width="40px">
+                        </div>
+                        <div class="col-10">
+                            <h3>Simon Egersand</h3>
+                        </div>
+                    </div>
+                    <div class="row p-2 m-auto">
+                        <button type="button" class="btnN btn-primary">Follow</button>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-12">A Canadian software developer who thinks he’s funny. He/Him.</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">LOCATION</div>
+                        <div class="col-6">NY</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">EDUCATION</div>
+                        <div class="6">Mount Allison University</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">WORK</div>
+                        <div class="6">Co-founder at Forem</div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-7 ptext">JOINED</div>
+                        <div class="6">26 dic 2015</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--more of mobile-->
+            <div class="d-lg-none card p-3 col-lg-12">
+                <div class="row">
+                    <h2>More from <span class="word">Simon Egersand</span></h2>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">What do your friends and family think software development is
+                        like?</span>
+                    <span class="down pb-2">#discuss #watercode</span>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">Describe the worst job interview you´ve ever taken part in</span>
+                    <span class="down pb-2">#career</span>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">What do you wish you had time to learn</span>
+                    <span class="down pb-2">#discuss #career #watercooler</span>
+                </div>
+            </div>
+            <!--more of desktop-->
+
+            <div class="d-none d-lg-flex card p-3 col-lg-9 more-of">
+
+                <div class="row">
+                    <h2>More from <span class="word">Simon Egersand</span></h2>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">What do your friends and family think software development is
+                        like?</span>
+                    <span class="down pb-2">#discuss #watercode</span>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">Describe the worst job interview you´ve ever taken part in</span>
+                    <span class="down pb-2">#career</span>
+                </div>
+                <div class="row fila">
+                    <span class="up pt-3 pb-1">What do you wish you had time to learn</span>
+                    <span class="down pb-2">#discuss #career #watercooler</span>
+                </div>
+            </div>
+
+        </div>
+        <!--card se va a agrefar aqui con z index y dandole row O medidas de alto y largo en el css-->
+    </div>
+
+
+    <footer class="footer d-flex flex-column justify-content-center align-items-center py-5">
+        <span class="footer_first"><a class="footer_word">DEV Community </a>-- A constructive ans inclusive social
+            network for software Developers. With you every step of your journey.</span>
+        <span class="footer_second">Built on <a class="footerword">Forem</a> -- the <a class="footerword">open
+                source</a> software that powers <a class="footer_word">DEV</a> and other inclusive communities.</span>
+        <span>Made with love and <a class="footer_word">Ruby on Rails.</a class="footer_word">DEV Community ©
+            2016-2022</span>
+        <i class="fa-solid fa-seedling footer__icon"></i>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
