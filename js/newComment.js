@@ -5,23 +5,30 @@ btnCreate.addEventListener("click", () => {
     let photo= document.getElementById("photo").value
     let userName= document.getElementById("userName").value
     let title= document.getElementById("title").value
-    let hash= document.getElementById("hash").value
+    let tag= document.getElementById("tag").value
     let content= document.getElementById("content").value
+    let date= document.getElementById("date").value
+    let pph= document.getElementById("pph").value
+    let readTime= document.getElementById("readTime").value
 
-    if(photo === "" || userName === "" || title === "" || hash === "" || content === ""){
+
+    if(photo === "" || userName === "" || title === "" || tag === "" || content === "" || date === "" || pph ===""){
         alert("Empty input")
     } else {
         let newComment= {
             photo: photo,
             userName: userName,
             title: title,
-            hash: hash,
-            content: content
+            tag: tag,
+            content: content,
+            date:date,
+            pph: pph,
+            readTime: readTime
         }
 
         console.log(newComment)
 
-        fetch("https://devto-8117c-default-rtdb.firebaseio.com/post.json", {
+        fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts/.json", {
             method: 'POST',
             body: JSON.stringify(newComment),
             headers: {
@@ -30,10 +37,13 @@ btnCreate.addEventListener("click", () => {
             })
             .then((response) => {
                 console.log(response)
-                return response.JSON()
+                return response.json()
             })
             .then((finalResponse) => {
-                alert (finalResponse.name)
+                alert (`Post ${finalResponse.name}`)
+            })
+            .catch((err) => {
+                console.log(err)
             })
             
     }
