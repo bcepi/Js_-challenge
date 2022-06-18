@@ -7,10 +7,11 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
 })
 .then((response) => {
     console.log(response)
+    
     let template=""
     for(post in response){
         let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
-   
+        console.log(post)
         template += `
         <div class="card cardC mb-2">
             <div class="row">
@@ -30,7 +31,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                 </div>
             </div>
             <div class="row px-5">
-                <a class="title_articleC aC " href="post.html">
+                <a class="title_articleC aC " href="http://127.0.0.1:5501/post.html/${post}">
                     ${title}
                 </a>
             </div>
