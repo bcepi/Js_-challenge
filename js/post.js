@@ -24,7 +24,7 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
 
     let {photo, userName, title, tag, content, pph, date, readTime}=  response
     // BereNote: Se extrajo el codigo del documento post.html linea 162
-    
+
     template += `
             <div class="col-12 d-lg-none">
                 <img class="top-img" src="${photo}" alt="">
@@ -264,7 +264,7 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
                     <span class="down pb-2">#discuss #watercode</span>
                 </div>
                 <div class="row fila">
-                    <span class="up pt-3 pb-1">Describe the worst job interview you´ve ever taken part in</span>
+                    <span class="up pt-3 pb-1">Describe the worst job interview you ve ever taken part in</span>
                     <span class="down pb-2">#career</span>
                 </div>
                 <div class="row fila">
