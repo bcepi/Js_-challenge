@@ -26,6 +26,8 @@ fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
 .catch((Err)=>{
     console.log(Err)
 })
+
+
 let btnUpdate = document.getElementById("btnUpdate")
 btnUpdate.addEventListener("click",()=>{
     photo = document.querySelector("#photo").value
@@ -70,4 +72,24 @@ btnUpdate.addEventListener("click",()=>{
         })
 }})
 
-
+let btnEliminar = document.getElementById("btnDelete")
+btnEliminar.addEventListener("click", ()=>{
+    fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`,{
+        method: 'DELETE'
+    })
+    .then((response) =>{
+        if (!response.ok){
+            let err = new Error(
+                `Algo salio mal ${err}`
+            ) 
+            throw err
+        } else {
+            return response.json()
+        }
+    }).then((response) =>{
+        console.log(response)
+        window.location.pathname = 'index.html' 
+    }).catch((err) => {
+        console.log(err)
+    })
+})

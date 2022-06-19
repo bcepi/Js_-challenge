@@ -12,7 +12,7 @@ btnCreate.addEventListener("click", () => {
     let readTime= document.getElementById("readTime").value
 
 
-    if(photo === "" || userName === "" || title === "" || tag === "" || content === "" || date === "" || pph ===""){
+    if(userName === "" || title === "" || tag === "" || content === "" || date === "" || pph ==="" || readTime ===""){
         alert("Empty input")
     } else {
         let newComment= {
@@ -41,6 +41,7 @@ btnCreate.addEventListener("click", () => {
             })
             .then((finalResponse) => {
                 alert (`Post ${finalResponse.name}`)
+                window.location.pathname = "index.html"
             })
             .catch((err) => {
                 console.log(err)
