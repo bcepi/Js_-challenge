@@ -19,8 +19,11 @@ btnCreate.addEventListener("click", () => {
             photo: photo,
             userName: userName,
             title: title,
-            hash: hash,
-            content: content
+            tag: tag,
+            content: content,
+            date:date,
+            pph: pph,
+            readTime: readTime
         }
 
         console.log(newComment)

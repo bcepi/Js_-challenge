@@ -31,7 +31,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                 </div>
             </div>
             <div class="row px-5">
-                <a class="title_articleC aC " href="http://127.0.0.1:5501/post.html/${post}">
+                <a class="title_articleC aC" href="post.html?reponsepost=${post}">
                     ${title}
                 </a>
             </div>
@@ -59,6 +59,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
 .catch((err)=> {
     console.log(err)
 })
+
 
 
 
