@@ -19,6 +19,7 @@ fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
     document.querySelector("#tag").value = tag
     document.querySelector("#content").value = content
     document.querySelector("#date").value = date
+    console.log(date)
     document.querySelector("#pph").value = pph
     document.querySelector("#readTime").value = readTime
 })
