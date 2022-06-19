@@ -135,7 +135,8 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
                             </div>
                         </div>
                     </div>
-                </div>
+                    <a class ="btn" href=update.html?response${url}>botoncito</a>
+                </div> 
 
 
             `
