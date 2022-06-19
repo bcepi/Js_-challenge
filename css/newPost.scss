@@ -1,0 +1,80 @@
+$primary-gray:rgba(161, 161, 161, 0.371);
+$margL: 3.7rem;
+$margT:1rem;
+#form{
+    margin-top: 3.5rem;
+    background-color:white;
+    width: 50rem;
+    margin-left: 1rem;
+    border-radius: .5rem;
+}
+#top-Wrapper{
+    margin-top: $margT;
+}
+#photo{
+    margin-left: $margL;
+    margin-top:$margT;
+    color: black;
+    border:solid $primary-gray;
+    width: 13.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    
+}
+
+#userName{
+    margin-left: 1rem;
+    border:solid $primary-gray;
+    width: 13.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    
+}
+#pph{
+    margin-left: 1rem;
+    border:solid $primary-gray;
+    width: 13.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+#title{
+    margin-left: $margL;
+    margin-top: $margT;
+    width: 90%;
+    color: rgb(79, 79, 79);
+    border: none;
+    font-size:3rem;
+    font-weight: 800;
+    
+}
+
+#tag{
+    margin-left: $margL;
+    margin-top: .5rem;
+    border: none;
+}
+#editingLine{
+    margin-top: 2rem;
+    width: 100%;
+    height: 3rem;
+    background-color:rgba(246, 246, 246, 0.883);
+}
+#content{
+    margin-left: $margL;
+    margin-top: 1.5rem;
+    width: 85%;
+    height: 4rem;
+    border:none;
+    font-family: monospace;
+}
+
+#create{
+    margin-left: 1rem;
+    margin-top: $margT;
+    margin-bottom: .8rem;
+    width: 20%;
+}

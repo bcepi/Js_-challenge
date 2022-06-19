@@ -20,6 +20,15 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
 })
 .then((response) => {
     console.log(response.title)
+    let templateCreateBtn=""
+    templateCreateBtn += `
+        <a href="#" class="container__log d-none d-lg-block  cont-link m-3">Log in</a>
+        <a class="d-lg-none me-2 " href="#"><i><img src="images/magnifying-icon.svg"
+        alt=""></i></a>
+        <a class="btn container__btn" href=update.html?response${url}>Create Post</a>
+    `
+    document.querySelector('#createBtn').innerHTML = templateCreateBtn
+
     let template=""
 
     let {photo, userName, title, tag, content, pph, date, readTime}=  response
@@ -135,7 +144,7 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
                             </div>
                         </div>
                     </div>
-                    <a class ="btn" href=update.html?response${url}>botoncito</a>
+                    
                 </div> 
 
 
