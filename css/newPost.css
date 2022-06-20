@@ -1,3 +1,8 @@
+#closeForm {
+  border: none;
+  border-radius: 100%;
+}
+
 #form {
   margin-top: 3.5rem;
   background-color: white;
@@ -43,7 +48,7 @@
   margin-left: 3.7rem;
   margin-top: 1rem;
   width: 90%;
-  color: #4f4f4f;
+  color: black;
   border: none;
   font-size: 3rem;
   font-weight: 800;
@@ -52,6 +57,7 @@
 #tag {
   margin-left: 3.7rem;
   margin-top: .5rem;
+  width: 90%;
   border: none;
 }
 
@@ -64,17 +70,54 @@
 
 #content {
   margin-left: 3.7rem;
-  margin-top: 1.5rem;
-  width: 85%;
-  height: 4rem;
+  margin-top: 1rem;
+  width: 90%;
+  height: 6rem;
   border: none;
   font-family: monospace;
 }
 
 #create {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 1rem;
   margin-bottom: .8rem;
   width: 20%;
+}
+
+#btnUpdate {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: .8rem;
+  width: 20%;
+}
+
+#btnDelete {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .8rem;
+  width: 20%;
+  background-color: darkred;
+}
+
+#readTime {
+  margin-left: 3.7rem;
+  margin-top: 1rem;
+  width: 80%;
+  border: none;
+}
+
+#date {
+  margin-left: 3.7rem;
+  margin-top: 1rem;
+  width: 80%;
+  border: none;
+}
+
+.navCreatePost {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#editBox {
+  background-color: #ffbc3f;
 }
 /*# sourceMappingURL=newPost.css.map */

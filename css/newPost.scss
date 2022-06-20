@@ -1,6 +1,11 @@
 $primary-gray:rgba(161, 161, 161, 0.371);
 $margL: 3.7rem;
 $margT:1rem;
+#closeForm{
+    border: none;
+    border-radius: 100%;
+}
+
 #form{
     margin-top: 3.5rem;
     background-color:white;
@@ -45,7 +50,7 @@ $margT:1rem;
     margin-left: $margL;
     margin-top: $margT;
     width: 90%;
-    color: rgb(79, 79, 79);
+    color:black ;
     border: none;
     font-size:3rem;
     font-weight: 800;
@@ -55,6 +60,7 @@ $margT:1rem;
 #tag{
     margin-left: $margL;
     margin-top: .5rem;
+    width: 90%;
     border: none;
 }
 #editingLine{
@@ -65,16 +71,51 @@ $margT:1rem;
 }
 #content{
     margin-left: $margL;
-    margin-top: 1.5rem;
-    width: 85%;
-    height: 4rem;
+    margin-top: $margT;
+    width: 90%;
+    height: 6rem;
     border:none;
     font-family: monospace;
 }
 
 #create{
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: $margT;
     margin-bottom: .8rem;
     width: 20%;
+}
+
+#btnUpdate{
+    margin-left: 2rem;
+    margin-top: $margT;
+    margin-bottom: .8rem;
+    width: 20%;  
+}
+#btnDelete{
+    margin-left: 1.5rem;
+    margin-top: $margT;
+    margin-bottom: .8rem;
+    width: 20%;  
+    background-color: darkred;
+}
+#readTime{
+    margin-left: $margL;
+    margin-top:$margT;
+    width: 80%;
+    border: none;
+}
+#date{
+    margin-left: $margL;
+    margin-top:$margT;
+    width: 80%;
+    border: none;
+}
+
+.navCreatePost{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+//edit dentro del post
+#editBox{
+    background-color: rgb(255, 188, 63);
 }

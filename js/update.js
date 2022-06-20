@@ -39,7 +39,7 @@ btnUpdate.addEventListener("click",()=>{
     pph = document.querySelector("#pph").value 
     readTime = document.querySelector("#readTime").value 
 
-    if(photo === "" || userName === "" || title === "" || tag === "" || content === "" || date === "" || pph ===""){
+    if(userName === "" || title === "" || tag === "" || content === "" || date === "" || pph ===""){
         alert("Empty input")
     } else {
         let newComment= {

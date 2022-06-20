@@ -20,14 +20,7 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
 })
 .then((response) => {
     console.log(response.title)
-    let templateCreateBtn=""
-    templateCreateBtn += `
-        <a href="#" class="container__log d-none d-lg-block  cont-link m-3">Log in</a>
-        <a class="d-lg-none me-2 " href="#"><i><img src="images/magnifying-icon.svg"
-        alt=""></i></a>
-        <a class="btn container__btn" href=update.html?response${url}>Create Post</a>
-    `
-    document.querySelector('#createBtn').innerHTML = templateCreateBtn
+    
 
     let template=""
 
@@ -58,8 +51,17 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
             
                     <div class="col-10 col-lg-5">
                         <a class="post-details__user-name" href="#"> ${userName}</a>
-                        <p class="post-details__post-info"><small> posted on <time>${date}</time> • Originally published at
-                            <a href="#">prplcode.dev</a></small></p>
+                        <p class="post-details__post-info"><small> posted on <time>${date}</time>
+                            <a href="#"></a></small></p>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                    <div  class="col-lg-3">
+                        <div id="editBox">
+                            <a href="update.html?response${url}">Edit</a>
+                            <a>Manage</a>
+                            <a>Stats</a>
+                        </div>
                     </div>
                 </div>
             </div>
