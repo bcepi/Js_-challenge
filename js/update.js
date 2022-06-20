@@ -66,6 +66,7 @@ btnUpdate.addEventListener("click",()=>{
             })
             .then((finalResponse) => {
                 console.log(finalResponse)
+                alert('Usuario editado con exito')
         })
         .catch((err)=>{
             console.log(err)
@@ -73,23 +74,29 @@ btnUpdate.addEventListener("click",()=>{
 }})
 
 let btnEliminar = document.getElementById("btnDelete")
+
 btnEliminar.addEventListener("click", ()=>{
-    fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`,{
-        method: 'DELETE'
-    })
-    .then((response) =>{
-        if (!response.ok){
-            let err = new Error(
-                `Algo salio mal ${err}`
-            ) 
-            throw err
-        } else {
-            return response.json()
-        }
-    }).then((response) =>{
-        console.log(response)
+    let respuesta = confirm('Esta seguro que desea eliminar el post?')
+    if(respuesta == false){
         window.location.pathname = 'index.html' 
-    }).catch((err) => {
-        console.log(err)
-    })
-})
+    } else{
+        fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`,{
+            method: 'DELETE'
+        })
+        .then((response) =>{
+            if (!response.ok){
+                let err = new Error(
+                    `Algo salio mal ${err}`
+                ) 
+                throw err
+            } else {
+                return response.json()
+            }
+        }).then((response) =>{
+            console.log(response)
+            window.location.pathname = 'index.html' 
+
+        }).catch((err) => {
+            console.log(err)
+        })
+    }})
