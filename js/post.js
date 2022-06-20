@@ -1,5 +1,3 @@
-
-
 //http://127.0.0.1:5501/post.html?reponsepost=-N4oTPZlExYsU685Czlk
 
 let url= window.location.search.substring(13)
@@ -265,28 +263,11 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
 
         <!--more of desktop-->
 
-            <div class="d-none d-lg-flex card p-3 col-lg-9 more-of">
-
-                <div class="row">
-                    <h2>More from <span class="word">${userName}</span></h2>
-                </div>
-                <div class="row fila">
-                    <span class="up pt-3 pb-1">What do your friends and family think software development is
-                        like?</span>
-                    <span class="down pb-2">#discuss #watercode</span>
-                </div>
-                <div class="row fila">
-                    <span class="up pt-3 pb-1">Describe the worst job interview you ve ever taken part in</span>
-                    <span class="down pb-2">#career</span>
-                </div>
-                <div class="row fila">
-                    <span class="up pt-3 pb-1">What do you wish you had time to learn</span>
-                    <span class="down pb-2">#discuss #career #watercooler</span>
-                </div>
-            </div>
+           
     `
 
     document.querySelector('#rigthCol').innerHTML = templateRigthCol
 
 }).catch((err)=> {
     console.log(err)})
+
