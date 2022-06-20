@@ -57,10 +57,10 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
                     <div class="col-lg-1">
                     </div>
                     <div  class="col-lg-3">
-                        <div id="editBox">
-                            <a href="update.html?response${url}">Edit</a>
-                            <a>Manage</a>
-                            <a>Stats</a>
+                        <div id="editBox" class ="d-lg-flex justify-content-around align-items-center">
+                            <a class="linkStyle" href="update.html?response${url}">Edit</a>
+                            <a class="linkStyle" href="#">Manage</a>
+                            <a class="linkStyle" href="#">Stats</a>
                         </div>
                     </div>
                 </div>
