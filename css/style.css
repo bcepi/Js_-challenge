@@ -341,15 +341,14 @@ body {
 
 .btn__discussC {
   width: auto;
-  font-size: 12px;
-  margin: 3px;
   height: 25px;
-  border: none;
-  background-color: rgb(232, 250, 237);
+  border: 0 solid;
+  background-color: white;
 }
 
 .btn__discussC:hover {
-  border: 1.5px solid rgb(192, 255, 210);
+  border: 1px solid rgb(192, 255, 210);
+  background-color: rgb(192, 255, 210);
 }
 
 .btn__javascriptC {

@@ -39,7 +39,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                         </a>
                     </div>
                     <div class="row ps-5">
-                        <button class="btn__discussC">#${tag}</button>
+                        <button class="buttonC btn__discussC">#${tag}</button>
                     </div>
                     <div class="row">
                         <div class="col-7">
@@ -49,7 +49,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                             </div>
                         </div>   
                         <div class="col-5 d-flex justify-content-center mt-3">
-                                <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                 <a class="btn btn__saveC ">Save</a>
                         </div>
                         
@@ -80,7 +80,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                             </a>
                         </div>
                         <div class="row ps-5">
-                            <button class="btn__discussC">#${tag}</button>
+                            <button class="buttonC btn__discussC">#${tag}</button>
                         </div>
                         <div class="row">
                             <div class="col-7">
@@ -90,7 +90,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                                 </div>
                             </div>   
                             <div class="col-5 d-flex justify-content-center mt-3">
-                                    <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                    <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                     <a class="btn btn__saveC ">Save</a>
                             </div>
                             
@@ -153,7 +153,7 @@ btnAll.addEventListener("click", () => {
                         </a>
                     </div>
                     <div class="row ps-5">
-                        <button class="btn__discussC">#${tag}</button>
+                        <button class="buttonC btn__discussC">#${tag}</button>
                     </div>
                     <div class="row">
                         <div class="col-7">
@@ -163,7 +163,7 @@ btnAll.addEventListener("click", () => {
                             </div>
                         </div>   
                         <div class="col-5 d-flex justify-content-center mt-3">
-                                <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                 <a class="btn btn__saveC ">Save</a>
                         </div>
                         
@@ -196,7 +196,7 @@ btnAll.addEventListener("click", () => {
                             </a>
                         </div>
                         <div class="row ps-5">
-                            <button class="btn__discussC">#${tag}</button>
+                            <button class="buttonC btn__discussC">#${tag}</button>
                         </div>
                         <div class="row">
                             <div class="col-7">
@@ -206,7 +206,7 @@ btnAll.addEventListener("click", () => {
                                 </div>
                             </div>   
                             <div class="col-5 d-flex justify-content-center mt-3">
-                                    <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                    <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                     <a class="btn btn__saveC ">Save</a>
                             </div>
                             
@@ -274,7 +274,7 @@ btnJS.addEventListener("click", () => {
                         </a>
                     </div>
                     <div class="row ps-5">
-                        <button class="btn__discussC">#${tag}</button>
+                        <button class="buttonC btn__discussC">#${tag}</button>
                     </div>
                     <div class="row">
                         <div class="col-7">
@@ -284,7 +284,7 @@ btnJS.addEventListener("click", () => {
                             </div>
                         </div>   
                         <div class="col-5 d-flex justify-content-center mt-3">
-                                <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                 <a class="btn btn__saveC ">Save</a>
                         </div>
                         
@@ -318,7 +318,7 @@ btnJS.addEventListener("click", () => {
                             </a>
                         </div>
                         <div class="row ps-5">
-                            <button class="btn__discussC">#${tag}</button>
+                            <button class="buttonC btn__discussC">#${tag}</button>
                         </div>
                         <div class="row">
                             <div class="col-7">
@@ -328,7 +328,7 @@ btnJS.addEventListener("click", () => {
                                 </div>
                             </div>   
                             <div class="col-5 d-flex justify-content-center mt-3">
-                                    <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                    <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                     <a class="btn btn__saveC ">Save</a>
                             </div>
                             
@@ -396,7 +396,7 @@ btnHtml.addEventListener("click", () => {
                         </a>
                     </div>
                     <div class="row ps-5">
-                        <button class="btn__discussC">#${tag}</button>
+                        <button class="buttonC btn__discussC">#${tag}</button>
                     </div>
                     <div class="row">
                         <div class="col-7">
@@ -438,7 +438,7 @@ btnHtml.addEventListener("click", () => {
                             </a>
                         </div>
                         <div class="row ps-5">
-                            <button class="btn__discussC">#${tag}</button>
+                            <button class="buttonC btn__discussC">#${tag}</button>
                         </div>
                         <div class="row">
                             <div class="col-7">
@@ -448,7 +448,7 @@ btnHtml.addEventListener("click", () => {
                                 </div>
                             </div>   
                             <div class="col-5 d-flex justify-content-center mt-3">
-                                    <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                    <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                     <a class="btn btn__saveC ">Save</a>
                             </div>
                             
