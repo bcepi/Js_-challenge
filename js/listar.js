@@ -2,22 +2,24 @@
 
 fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
 .then((response) => {
-    console.log(response)
     return response.json()
 })
 .then((response) => {
-    console.log(response)
     
     let template=""
-    let contador = 1
+    let contador = 0
 
     for(post in response){
         let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
-        
-        if (contador > 1){
+
+        contador++
+        if (contador == Object.keys(response).length){
             
                 template += `
                 <div class="card cardC mb-2">
+                    <div class="row">
+                        <img src="${photo}" alt="">
+                    </div>
                     <div class="row">
                         <div class="col-1 ms-3 mt-4">
                             <img class="pph" src="${pph}" alt="" />
@@ -53,18 +55,15 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                         
                     </div>
                 </div>
-                `
-
-            document.querySelector(".centro").innerHTML =template
+                ` 
+            document.querySelector(".centro").innerHTML = template
+            
             } else {
                     template += `
                     <div class="card cardC mb-2">
                         <div class="row">
-                            <img src="${photo}" alt="" />
-                        </div>
-                        <div class="row">
                             <div class="col-1 ms-3 mt-4">
-                                <img class="pph" src="${pph}" alt="" />
+                                <img class="pph" src="${pph}" alt="">
                             </div>
                             <div class="col-10 my-4 ms-2">
                                 <div class="row">
@@ -98,43 +97,43 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
                         </div>
                     </div>
                     `
-                    
+               
                 document.querySelector(".centro").innerHTML =template
             }
-            contador++
-            console.log(contador)
-        }
-        
+        }   
 })
 .catch((err)=> {
     console.log(err)
 })
 
+
 let btnAll = document.querySelector('#allPosts')
-
 let btnJS = document.querySelector('#jsPosts')
-
 let btnHtml = document.querySelector('#htmlPosts')
+
+
 
 btnAll.addEventListener("click", () => {
     fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
 .then((response) => {
-    console.log(response)
     return response.json()
 })
 .then((response) => {
-    console.log(response)
     
     let template=""
-    let contador = 1
+    let contador = 0
 
     for(post in response){
         let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
         
-        if (contador > 1){
-            
+        contador++
+        if (contador == Object.keys(response).length){
+            console.log('entro al if')
                 template += `
                 <div class="card cardC mb-2">
+                    <div class="row">
+                        <img src="${photo}" alt="">
+                    </div>
                     <div class="row">
                         <div class="col-1 ms-3 mt-4">
                             <img class="pph" src="${pph}" alt="" />
@@ -173,12 +172,11 @@ btnAll.addEventListener("click", () => {
                 `
 
             document.querySelector(".centro").innerHTML =template
+            
             } else {
                     template += `
                     <div class="card cardC mb-2">
-                        <div class="row">
-                            <img src="${photo}" alt="" />
-                        </div>
+
                         <div class="row">
                             <div class="col-1 ms-3 mt-4">
                                 <img class="pph" src="${pph}" alt="" />
@@ -218,10 +216,7 @@ btnAll.addEventListener("click", () => {
                     
                 document.querySelector(".centro").innerHTML =template
             }
-            contador++
-            console.log(contador)
         }
-        
 })
 .catch((err)=> {
     console.log(err)
@@ -231,22 +226,35 @@ btnAll.addEventListener("click", () => {
 btnJS.addEventListener("click", () => {
     fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
 .then((response) => {
-    console.log(response)
+    // console.log(response)
     return response.json()
 })
 .then((response) => {
-    console.log(response)
+    // console.log(response)
     
     let template=""
-    let contador = 1
+    let bandera= ''
+    
+
+    for(post in response){
+        let {tag,title}=  response[post]
+
+        if (tag.toLowerCase() === "javascript"){
+            bandera= response[post].title
+        } 
+    }
 
     for(post in response){
         let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
-        
-        if (contador > 1){
+
+        if (bandera === title){
+            console.log('entre')
             if(tag.toLowerCase() === "javascript"){
                 template += `
                 <div class="card cardC mb-2">
+                    <div class="row">
+                        <img src="${photo}" alt="" />
+                    </div>
                     <div class="row">
                         <div class="col-1 ms-3 mt-4">
                             <img class="pph" src="${pph}" alt="" />
@@ -285,13 +293,12 @@ btnJS.addEventListener("click", () => {
                 `
             }
             document.querySelector(".centro").innerHTML =template
-            } else {
+            } 
+            else {
                 if(tag.toLowerCase() === "javascript"){
                     template += `
                     <div class="card cardC mb-2">
-                        <div class="row">
-                            <img src="${photo}" alt="" />
-                        </div>
+
                         <div class="row">
                             <div class="col-1 ms-3 mt-4">
                                 <img class="pph" src="${pph}" alt="" />
@@ -331,10 +338,7 @@ btnJS.addEventListener("click", () => {
                 }
                 document.querySelector(".centro").innerHTML =template
             }
-            contador++
-            console.log(contador)
-        }
-        
+        } 
 })
 .catch((err)=> {
     console.log(err)
@@ -351,15 +355,28 @@ btnHtml.addEventListener("click", () => {
     console.log(response)
     
     let template=""
-    let contador = 1
+    let bandera= ''
+    
+
+    for(post in response){
+        let {tag,title}=  response[post]
+
+        if (tag.toLowerCase() === "html"){
+            bandera= response[post].title
+        } 
+    }
 
     for(post in response){
         let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
         
-        if (contador > 1){
+        
+        if (bandera === title){
             if(tag.toLowerCase() === "html"){
                 template += `
                 <div class="card cardC mb-2">
+                    <div class="row">
+                        <img src="${photo}" alt="" />
+                    </div>
                     <div class="row">
                         <div class="col-1 ms-3 mt-4">
                             <img class="pph" src="${pph}" alt="" />
@@ -389,7 +406,7 @@ btnHtml.addEventListener("click", () => {
                             </div>
                         </div>   
                         <div class="col-5 d-flex justify-content-center mt-3">
-                                <p class="time__readC me-1 pe-0 mt-2">${readTime}min read</p>
+                                <p class="time__readC me-1 pe-0 mt-2">${readTime} min read</p>
                                 <a class="btn btn__saveC ">Save</a>
                         </div>
                         
@@ -402,9 +419,6 @@ btnHtml.addEventListener("click", () => {
                 if(tag.toLowerCase() === "html"){
                     template += `
                     <div class="card cardC mb-2">
-                        <div class="row">
-                            <img src="${photo}" alt="" />
-                        </div>
                         <div class="row">
                             <div class="col-1 ms-3 mt-4">
                                 <img class="pph" src="${pph}" alt="" />
@@ -444,10 +458,7 @@ btnHtml.addEventListener("click", () => {
                 }
                 document.querySelector(".centro").innerHTML =template
             }
-            contador++
-            console.log(contador)
         }
-        
 })
 .catch((err)=> {
     console.log(err)
