@@ -35,27 +35,36 @@ fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
             </div>
                 
             <!--wrapper del resto del doc-->
-            <div class="wrapper">
+        <!--PADDING al POST-->
+            <div class="wrapper p-4">
 
             <!--detalles del post-->
             <div class="post-details">
                 <div class="row">
-                
-                    <!--1ra columna ocupada solo para la info-->
+                <!--editBOX-->   
+                 <div  class="col-12 d-lg-none">
+                    <div id="editBox" class ="d-lg-flex justify-content-around align-items-center">
+                        <a class="linkStyle" href="update.html?response${url}">Edit</a>
+                        <a class="linkStyle" href="#">Manage</a>
+                        <a class="linkStyle" href="#">Stats</a>
+                     </div>
+                 </div>    
+                <!--1ra columna ocupada solo para la info-->
                     <div class="col-lg-1"></div>
-                    <div class="col-1 col-lg-1">
+                    <div class="col-2 col-lg-1">
                         <img class="post-details__user-img" src="${pph}" alt="">
                     </div>
             
-                    <div class="col-10 col-lg-5">
+                    <div class="col-6 col-lg-5">
                         <a class="post-details__user-name" href="#"> ${userName}</a>
                         <p class="post-details__post-info"><small> posted on <time>${date}</time>
                             <a href="#"></a></small></p>
                     </div>
                     <div class="col-lg-1">
                     </div>
+                    <!--editBOX-->
                     <div  class="col-lg-3">
-                        <div id="editBox" class ="d-lg-flex justify-content-around align-items-center">
+                        <div id="editBox" class ="d-none d-lg d-lg-flex justify-content-around align-items-center">
                             <a class="linkStyle" href="update.html?response${url}">Edit</a>
                             <a class="linkStyle" href="#">Manage</a>
                             <a class="linkStyle" href="#">Stats</a>
