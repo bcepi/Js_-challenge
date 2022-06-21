@@ -550,10 +550,10 @@ body {
 }
 
 .icons__heart {
-  height: 3rem;
-  width: 3rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-left: 1.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 50%;
   -webkit-transform: all .1s ease;
           transform: all .1s ease;
@@ -565,10 +565,10 @@ body {
 }
 
 .icons__dragon {
-  height: 3rem;
-  width: 3rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-left: 1.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 50%;
   -webkit-transform: all .1s ease;
           transform: all .1s ease;
@@ -579,10 +579,10 @@ body {
 }
 
 .icons__save {
-  height: 3rem;
-  width: 3rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-left: 1.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 50%;
   -webkit-transform: all .1s ease;
           transform: all .1s ease;
@@ -593,10 +593,10 @@ body {
 }
 
 .icons__ellipsis {
-  height: 3rem;
-  width: 3rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-left: 1.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 50%;
   -webkit-transform: all .1s ease;
           transform: all .1s ease;
