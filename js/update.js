@@ -66,7 +66,8 @@ btnUpdate.addEventListener("click",()=>{
             })
             .then((finalResponse) => {
                 console.log(finalResponse)
-                alert('Usuario editado con exito')
+                alert('Post editado con exito')
+                window.location.pathname = 'index.html'
         })
         .catch((err)=>{
             console.log(err)

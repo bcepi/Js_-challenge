@@ -40,7 +40,7 @@ btnCreate.addEventListener("click", () => {
                 return response.json()
             })
             .then((finalResponse) => {
-                alert (`Post ${finalResponse.name}`)
+                alert (`Post creado con exito! ${finalResponse.name}`)
                 window.location.pathname = "index.html"
             })
             .catch((err) => {

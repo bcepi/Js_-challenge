@@ -8,7 +8,7 @@
   background-color: white;
   width: 50rem;
   margin-left: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #top-Wrapper {
@@ -23,7 +23,7 @@
   width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #userName {
@@ -32,7 +32,7 @@
   width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #pph {
@@ -41,7 +41,7 @@
   width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 #title {
@@ -56,7 +56,7 @@
 
 #tag {
   margin-left: 3.7rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   width: 90%;
   border: none;
 }
@@ -98,21 +98,21 @@
 #create {
   margin-left: 2rem;
   margin-top: 1rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   width: 20%;
 }
 
 #btnUpdate {
   margin-left: 2rem;
   margin-top: 1rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   width: 20%;
 }
 
 #btnDelete {
   margin-left: 1.5rem;
   margin-top: 1rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   width: 10%;
   background-color: darkred;
 }
@@ -138,18 +138,17 @@
 #editBox {
   background-color: rgba(255, 188, 63, 0.122);
   width: auto;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   height: 2.5rem;
 }
 
 .linkStyle {
   text-decoration: none;
   color: black;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .linkStyle:hover {
   color: black;
   background-color: rgba(119, 119, 119, 0.081);
-}
-/*# sourceMappingURL=newPost.css.map */
+}/*# sourceMappingURL=newPost.css.map */
