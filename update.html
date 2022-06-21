@@ -20,148 +20,218 @@
 
         <!-- Beggins navbar -->
         <header>
-            <nav class="navbar navCreatePost navbar-light fixed-top ps-lg-5 pe-lg-5 ">
-                <div class="container-fluid">
-                    <!-- Left section -->
-                    <div class="container-1 d-flex justify-content-center align-items-center">
-                        <button class="navbar-toggler me-1 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" width="50" height="40"></a>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header d-flex flex-column">    
-                                <div class="d-flex w-100 justify-content-between align-items-center ">
-                                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h2>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="collapse__info pt-1 px-3 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="pt-3"><span class="collapse__h2">DEV Community</span> is a community of 852,499 amazing developers</h2>
-                                    <p class="nav__info">We´re a place where coders share, stay up-to-date and grow they careers</p>
-                                    <button class="btn container__btn">Create account</button>
-                                    <a href="#" class="container__log">Log in</a>
-                                </div>
+    <!-- Beggins navbar -->
+    <header class=" d-lg-flex ">
+        <nav id="nav" class="navbar navCreatePost navbar-light fixed-top ps-lg-5 pe-lg-5 ">
+            <div class="container-fluid">
+                <!-- Left section -->
+                <div class="container-1 d-flex justify-content-center align-items-center">
+                    <button class="navbar-toggler me-1 d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img
+                            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                            alt="" width="50" height="40"></a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header d-flex flex-column">
+                            <div class="d-flex w-100 justify-content-between align-items-center ">
+                                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h2>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav mt-3">
-                                    <li class="nav-item p-2 ">
-                                        <i class=""><img src="/images/home-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/podcast-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Podcasts</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/cam-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Videos</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/tags-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Tags</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/faq-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Faqs</a>
-                                    </li>
-                                    <li class="nav-item p-2 ">
-                                        <i class=""><img src="/images/shop-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Forem Shop</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/sponsors-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Sponsors</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/about-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/contact-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                                <h3 class="mt-3">Other</h3>
-                                <ul class="navbar-nav ">    
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/conduct-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Code of Conduct</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/privacy-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Privacy Policy</a>
-                                    </li>
-                                    <li class="nav-item p-2">
-                                        <i class=""><img src="/images/terms-icon.svg" alt=""></i>
-                                        <a class="nav-link active d-inline" aria-current="page" href="#">Terms of use</a>
-                                    </li>
-                                </ul>
-                                <div class="nav__social mt-3 d-flex justify-content-center ">
-                                    <i class="fa-brands fa-twitter nav__social-logo ps-4 pe-4"></i>
-                                    <i class="fa-brands fa-facebook-square nav__social-logo ps-4 pe-4"></i>
-                                    <i class="fa-brands fa-github nav__social-logo ps-4 pe-4"></i>
-                                    <i class="fa-brands fa-instagram-square nav__social-logo ps-4 pe-4"></i>
-                                    <i class="fa-brands fa-twitch nav__social-logo ps-4 pe-4 "></i>
-                                </div>
+                            <div
+                                class="collapse__info pt-1 px-3 mt-3 d-flex flex-column justify-content-center align-items-center">
+                                <h2 class="pt-3"><span class="collapse__h2">DEV Community</span> is a community of
+                                    852,499 amazing developers</h2>
+                                <p class="nav__info">We´re a place where coders share, stay up-to-date and grow they
+                                    careers</p>
+                                <button class="btn container__btn">Create account</button>
+                                <a href="#" class="container__log">Log in</a>
                             </div>
                         </div>
-                        <label>Create Post</label>
-                    </div>
-                    <!-- End-->
-    
-                    <!-- Second Section -->
-                    <div class="container-2 d-flex">
-                        <div class="d-flex w-100 align-items-center justify-content-center ">
-                            
-                            <a  class="d-lg-none me-2 " href="#"><i><img src="/images/magnifying-icon.svg" alt=""></i></a>
-                            <a id="closeForm" href="index.html" class="btn container__btn ">X</a> 
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mt-3">
+                                <li class="nav-item p-2 ">
+                                    <i class=""><img src="/images/home-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/podcast-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Podcasts</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/cam-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Videos</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/tags-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Tags</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/faq-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Faqs</a>
+                                </li>
+                                <li class="nav-item p-2 ">
+                                    <i class=""><img src="/images/shop-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Forem Shop</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/sponsors-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Sponsors</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/about-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">About</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/contact-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <h3 class="mt-3">Other</h3>
+                            <ul class="navbar-nav ">
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/conduct-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Code of Conduct</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/privacy-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <i class=""><img src="/images/terms-icon.svg" alt=""></i>
+                                    <a class="nav-link active d-inline" aria-current="page" href="#">Terms of use</a>
+                                </li>
+                            </ul>
+                            <div class="nav__social mt-3 d-flex justify-content-center ">
+                                <i class="fa-brands fa-twitter nav__social-logo ps-4 pe-4"></i>
+                                <i class="fa-brands fa-facebook-square nav__social-logo ps-4 pe-4"></i>
+                                <i class="fa-brands fa-github nav__social-logo ps-4 pe-4"></i>
+                                <i class="fa-brands fa-instagram-square nav__social-logo ps-4 pe-4"></i>
+                                <i class="fa-brands fa-twitch nav__social-logo ps-4 pe-4 "></i>
+                            </div>
                         </div>
                     </div>
+                    <label>Create Post</label>
                 </div>
-            </nav>
-          </header>
-          <!-- End Navbar -->
+                <!-- End-->
 
-    <div class="container">
-    <form action="" class="d-flex flex-column card" id = "form" >
-     <div class="col-lg-1"></div>
-        
-        <div id="top-Wrapper">
-        <input id="photo" type="text" placeholder="Add a cover image">
-        
-        <input id="userName" type="text" placeholder="Write your user Name here">
-        
-        <input id="pph" type="text" placeholder="Add a profile picture">
-        </div>
-        <input id="title" type="text" placeholder="New post title here...">
-        <input id="tag" type="text" placeholder="Add up to 4 tags...">
-        <div id="editingLine" class="d-lg-flex  ">
-            <div class="col-lg-1"></div>
-                <div class="d-flex col-lg-7 justify-content-around align-items-center">
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 11h4.5a2.5 2.5 0 0 0 0-5H8v5Zm10 4.5a4.501 4.501 0 0 1-4.5 4.5H6V4h6.5a4.5 4.5 0 0 1 3.256 7.606A4.5 4.5 0 0 1 18 15.5ZM8 13v5h5.5a2.5 2.5 0 0 0 0-5H8Z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 20H7v-2h2.927l2.116-12H9V4h8v2h-2.927l-2.116 12H15v2Z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 15.536 16.95 14.12l1.414-1.414a5.001 5.001 0 0 0-3.531-8.551 5 5 0 0 0-3.54 1.48L9.879 7.05 8.464 5.636 9.88 4.222a7 7 0 1 1 9.9 9.9l-1.415 1.414zm-2.828 2.828-1.415 1.414a7 7 0 0 1-9.9-9.9l1.415-1.414L7.05 9.88l-1.414 1.414a5 5 0 1 0 7.071 7.071l1.414-1.414 1.415 1.414zm-.708-10.607 1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13v2H8zM5 3v3h1v1H3V6h1V4H3V3zM3 14v-2.5h2V11H3v-1h3v2.5H4v.5h2v1zm2 5.5H3v-1h2V18H3v-1h3v4H3v-1h2zM8 11h13v2H8zm0 7h13v2H8z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13v2H8zM4.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 6.9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM8 11h13v2H8zm0 7h13v2H8z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17 11V4h2v17h-2v-8H7v8H5V4h2v7z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m23 12-7.071 7.071-1.414-1.414L20.172 12l-5.657-5.657 1.414-1.414zM3.828 12l5.657 5.657-1.414 1.414L1 12l7.071-7.071 1.414 1.414z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5zm15 7-3.536 3.536-1.414-1.415L16.172 12 14.05 9.879l1.414-1.415zM7.828 12l2.122 2.121-1.414 1.415L5 12l3.536-3.536L9.95 9.88z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 9h8L11 24v-9H4l9-15v9Zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11Z" fill="#262626"></path></svg>
-                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="#262626"></path></svg>
+                <!-- Second Section -->
+                <div class="container-2 d-flex">
+                    <div class="d-flex w-100 align-items-center justify-content-center ">
+
+                        <a class="d-lg-none me-2 " href="#"><i><img src="/images/magnifying-icon.svg" alt=""></i></a>
+                        <a id="closeForm" href="index.html" class="btn container__btn ">X</a>
+                    </div>
                 </div>
-            <div class="col-lg-3 d-flex justify-content-end align-items-center">
-                <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-iconDot c-btn__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm2-5a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" fill="#262626"></path></svg> 
-            </div>    
-        </div>
-        <textarea id="content" type="text" placeholder="Write your post content here..."></textarea>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <div class="px-0 col-12 col-lg-12 container">
         
-        <input id="readTime" type="text" placeholder="Read time"></input>
-        
-        <input id="date" type="text" placeholder="dd/mm/aaaa"></input>
+        <form action="" class=" col-lg-8 d-flex flex-column card" id="form">
+
+
+            <div class="mx-2 col-lg-12  d-lg-flex justify-content-lg-around" id="top-Wrapper">
+                <label for="" class="d-lg-none col-6">Add a cover image</label>
+                <input class="col-5 col-lg-3" id="photo" type="text" placeholder="">
+                <label for="" class="d-lg-none col-6">Write your user Name</label>
+                <input class="col-5 col-lg-4" id="userName" type="text" placeholder="">
+                <label for="" class="d-lg-none col-6">Add a profile picture</label>
+                <input class="col-5 col-lg-3" id="pph" type="text" placeholder="">
+            </div>
+            <textarea class="mx-lg-5  col-12 col-lg-10" id="title" type="text" placeholder="New post title here..."></textarea>
+
+            <input class="mx-lg-5  col-12 col-lg-10" id="tag" type="text" placeholder="Add a tag">
+
+            <div id="editingLine" class="d-lg-flex  ">
+                <div class="col-lg-1"></div>
+                <div class="d-flex col-lg-7 justify-content-around align-items-center">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" width="24" height="24"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 11h4.5a2.5 2.5 0 0 0 0-5H8v5Zm10 4.5a4.501 4.501 0 0 1-4.5 4.5H6V4h6.5a4.5 4.5 0 0 1 3.256 7.606A4.5 4.5 0 0 1 18 15.5ZM8 13v5h5.5a2.5 2.5 0 0 0 0-5H8Z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" width="24" height="24"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 20H7v-2h2.927l2.116-12H9V4h8v2h-2.927l-2.116 12H15v2Z" fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.364 15.536 16.95 14.12l1.414-1.414a5.001 5.001 0 0 0-3.531-8.551 5 5 0 0 0-3.54 1.48L9.879 7.05 8.464 5.636 9.88 4.222a7 7 0 1 1 9.9 9.9l-1.415 1.414zm-2.828 2.828-1.415 1.414a7 7 0 0 1-9.9-9.9l1.415-1.414L7.05 9.88l-1.414 1.414a5 5 0 1 0 7.071 7.071l1.414-1.414 1.415 1.414zm-.708-10.607 1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 4h13v2H8zM5 3v3h1v1H3V6h1V4H3V3zM3 14v-2.5h2V11H3v-1h3v2.5H4v.5h2v1zm2 5.5H3v-1h2V18H3v-1h3v4H3v-1h2zM8 11h13v2H8zm0 7h13v2H8z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 4h13v2H8zM4.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 6.9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM8 11h13v2H8zm0 7h13v2H8z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 11V4h2v17h-2v-8H7v8H5V4h2v7z" fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m23 12-7.071 7.071-1.414-1.414L20.172 12l-5.657-5.657 1.414-1.414zM3.828 12l5.657 5.657-1.414 1.414L1 12l7.071-7.071 1.414 1.414z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5zm15 7-3.536 3.536-1.414-1.415L16.172 12 14.05 9.879l1.414-1.415zM7.828 12l2.122 2.121-1.414 1.415L5 12l3.536-3.536L9.95 9.88z"
+                            fill="#262626"></path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M13 9h8L11 24v-9H4l9-15v9Zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11Z" fill="#262626">
+                        </path>
+                    </svg>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-icon c-btn__icon" aria-hidden="true"
+                        focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                            fill="#262626"></path>
+                    </svg>
+                </div>
+                <div class="d-none col-lg-3 d-lg-flex justify-content-end align-items-center">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="crayons-iconDot c-btn__icon"
+                        aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm2-5a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"
+                            fill="#262626"></path>
+                    </svg>
+                </div>
+            </div>
+            <textarea class="mx-lg-5  col-12 col-lg-10" id="content" type="text" placeholder="Write your post content here..."></textarea>
+
+            <input class="mx-lg-5  col-12 col-lg-10" id="readTime" type="text" placeholder="Read time"></input>
+
+            <input class="mx-lg-5  col-12 col-lg-10" id="date" type="text" placeholder="dd/mm/aaaa"></input>
         <div>
             
-            <button type="button" class = "btn btn-primary" id = "btnUpdate">Save changes</button>
-            <button type="button" class = "btn btn-primary" id = "btnDelete">Delete</button>
+            <button type="button" class = "btn btn-primary mx-lg-5  col-5 col-lg-4" id = "btnUpdate">Save changes</button>
+            <button type="button" class = "btn btn-primary mx-lg-5  col-3 col-lg-3" id = "btnDelete">Delete</button>
          </div>
     </form>
 
