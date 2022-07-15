@@ -1,68 +1,60 @@
-#nav{
-  background-color: rgb(246, 246, 246)
-}
-
 #closeForm {
   border: none;
   border-radius: 100%;
 }
 
 #form {
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   background-color: white;
- /* width: 50rem;*/
   margin-left: 1rem;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
-*/
+
 #top-Wrapper {
   margin-top: 1rem;
 }
 
 #photo {
-  /*margin-left: 3.7rem;*/
-  /*margin-left: 1rem;*/
+  margin-left: 3.7rem;
   margin-top: 1rem;
   color: black;
   border: solid rgba(161, 161, 161, 0.371);
-  /*width: 13.5rem;*/
+  width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
 #userName {
-  margin-top: 1rem;
-  /*margin-left: 1rem;*/
+  margin-left: 1rem;
   border: solid rgba(161, 161, 161, 0.371);
-  /*width: 13.5rem;*/
+  width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
 #pph {
-  margin-top: 1rem;
-  /*margin-left: 1rem;*/
+  margin-left: 1rem;
   border: solid rgba(161, 161, 161, 0.371);
-  /*width: 13.5rem;*/
+  width: 13.5rem;
   height: 2.5rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
 #title {
-  /*margin-left: 3.7rem;*/
+  margin-left: 3.7rem;
   margin-top: 1rem;
-  /*width: 90%;*/
+  width: 90%;
   color: black;
   border: none;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 #tag {
-  /*margin-left: 3.7rem;*/
+  margin-left: 3.7rem;
   margin-top: .5rem;
   width: 90%;
   border: none;
@@ -70,7 +62,7 @@
 
 #editingLine {
   margin-top: 2rem;
-  /*width: 100%;*/
+  width: 100%;
   height: 3rem;
   background-color: rgba(246, 246, 246, 0.883);
 }
@@ -94,9 +86,9 @@
 }
 
 #content {
-  /*margin-left: 3.7rem;*/
+  margin-left: 3.7rem;
   margin-top: 1rem;
-  /*width: 90%;*/
+  width: 90%;
   height: 6rem;
   border: none;
   font-family: monospace;
@@ -105,38 +97,36 @@
 #create {
   margin-left: 2rem;
   margin-top: 1rem;
-  margin-bottom: 0.8rem;
-  /*width: 20%;*/
   margin-bottom: .8rem;
-  /*width: 20%;*/
+  width: 20%;
 }
 
 #btnUpdate {
   margin-left: 2rem;
   margin-top: 1rem;
   margin-bottom: .8rem;
-  /*width: 23%;*/
+  width: 20%;
 }
 
 #btnDelete {
   margin-left: 1.5rem;
   margin-top: 1rem;
   margin-bottom: .8rem;
-  /*width: 15%;*/
+  width: 10%;
   background-color: darkred;
 }
 
 #readTime {
-  /*margin-left: 3.7rem;*/
+  margin-left: 3.7rem;
   margin-top: 1rem;
-  /*width: 80%;*/
+  width: 80%;
   border: none;
 }
 
 #date {
-  /*margin-left: 3.7rem;*/
+  margin-left: 3.7rem;
   margin-top: 1rem;
-  /*width: 80%;*/
+  width: 80%;
   border: none;
 }
 
@@ -147,17 +137,18 @@
 #editBox {
   background-color: rgba(255, 188, 63, 0.122);
   width: auto;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   height: 2.5rem;
 }
 
 .linkStyle {
   text-decoration: none;
   color: black;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
 }
 
 .linkStyle:hover {
   color: black;
   background-color: rgba(119, 119, 119, 0.081);
-}/*# sourceMappingURL=newPost.css.map */
+}
+/*# sourceMappingURL=newPost.css.map */

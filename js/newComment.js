@@ -1,4 +1,5 @@
 let btnCreate = document.querySelector("#create")
+const url = ("http://localhost:8080/post")
 
 btnCreate.addEventListener("click", () => {
     
@@ -27,16 +28,15 @@ btnCreate.addEventListener("click", () => {
         }
 
         console.log(newComment)
-
-        fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts/.json", {
+       fetch(url, {
             method: 'POST',
             body: JSON.stringify(newComment),
             headers: {
                     "Content-type": "application/json; charset=UTF-8"
                 }
-            })
+            }) 
             .then((response) => {
-                console.log(response)
+                console.log(response, "Si entro al fetch de new comment")
                 return response.json()
             })
             .then((finalResponse) => {
@@ -44,7 +44,7 @@ btnCreate.addEventListener("click", () => {
                 window.location.pathname = "index.html"
             })
             .catch((err) => {
-                console.log(err)
+                console.log(err, "no entra al fetch de newcomment")
             })
             
     }
