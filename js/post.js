@@ -21,9 +21,7 @@ fetch (`http://localhost:8080/post/${url}`)
 .then((response) => {
     console.log(response.data.post)
     
-
-    let {photo, userName, title, tag, content, pph, date, readTime}=  response.data.post
-    // BereNote: Se extrajo el codigo del documento post.html linea 162
+    
 
     let template=""
 
@@ -96,7 +94,7 @@ fetch (`http://localhost:8080/post/${url}`)
                             <button class="comment__subscribe-btn">Subscribe</button>
                         </div>
                     </div>
-                    
+
                     <!--READ NEXT BOX-->
                 </div>
             </div>
@@ -135,6 +133,7 @@ fetch (`http://localhost:8080/post/${url}`)
                                     <p class="read-next__post-info">Efraim - 27 abr</p>
                                 </a>
                             </div>
+
                             <div class="col-lg-1"></div>
                             <div class="col-2 col-lg-1">
                                 <img class="read-next__user-img" src="images/user-michael.webp" alt="">
@@ -148,6 +147,8 @@ fetch (`http://localhost:8080/post/${url}`)
                     </div>
                     
                 </div> 
+
+
             `
     
     document.querySelector('#postBody').innerHTML = template
@@ -156,6 +157,7 @@ fetch (`http://localhost:8080/post/${url}`)
     templateRigthCol+= `
     
         <!-- columna derecha  -->
+
         <!--card mobile-->
             <div class="d-lg-none card p-3 col-lg-12">
                 <div class="card card-user">
@@ -177,6 +179,7 @@ fetch (`http://localhost:8080/post/${url}`)
                             I know languages like Python, Bash, and JavaScript, and also libraries for JavaScript like anime.js, Chartist.js, Puppeteer, and framework like Electron.js
                         </div>
                     </div>
+
                     <div class="row p-1">
                         <div class="col-7 ptext">LOCATION</div>
                         <div class="col-6">Ukraine, Kyiv</div>
@@ -195,6 +198,7 @@ fetch (`http://localhost:8080/post/${url}`)
                     </div>
                 </div>
             </div>
+
         <!--desktop-->
             <div class=" d-lg-flex card p-3 col-lg-9 carda">
                 <div>
@@ -207,6 +211,7 @@ fetch (`http://localhost:8080/post/${url}`)
                             <h3>${userName}</h3>
                         </div>
                     </div>
+
                     <div class="row p-2 m-auto">
                         <button type="button" class="btnN btn-primary">Follow</button>
                     </div>
@@ -237,6 +242,7 @@ fetch (`http://localhost:8080/post/${url}`)
                     </div>
                 </div>
             </div>
+
         <!--more of mobile-->
             <div class="d-lg-none card p-3 col-lg-12">
                 <div class="row">
@@ -255,11 +261,14 @@ fetch (`http://localhost:8080/post/${url}`)
                     <span class="down pb-2">#discuss #career #watercooler</span>
                 </div>
             </div>
+
         <!--more of desktop-->
-           
+
+    
     `
 
     document.querySelector('#rigthCol').innerHTML = templateRigthCol
 
 }).catch((err)=> {
     console.log(err)})
+
