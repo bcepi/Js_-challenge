@@ -1,24 +1,9 @@
-//http://127.0.0.1:5501/post.html?reponsepost=-N4oTPZlExYsU685Czlk
-
-let url= window.location.search.substring(13)
-console.log(url)
-console.log(url)
-
-
-
-fetch (`"http://localhost:8080/post/${url}`)
+fetch("http://localhost:8080/post/")
 .then((response) => {
-    if(!response.ok){
-        console.log(response)
-        throw new Error(
-            'Ups!'
-        )
-    } else {
-        return response.json()
-    }
+    console.log(response.json())
 })
 .then((response) => {
-    console.log(response.title)
+    
     
 
     let template=""
