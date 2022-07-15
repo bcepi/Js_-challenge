@@ -1,6 +1,6 @@
 
 
-fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
+fetch("http://localhost:8080/post/")
 .then((response) => {
     return response.json()
 })
@@ -9,11 +9,14 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
     let template=""
     let contador = 0
 
-    for(post in response){
-        let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
+    for(post in response.data.posts){
+        let {photo, userName, title, tag, content, pph, date, readTime }=  response.data.posts[post]
+
+
+        // console.log( response.data.posts);
 
         contador++
-        if (contador == Object.keys(response).length){
+        if (contador == Object.keys(response.data.posts).length){
             
                 template += `
                 <div class="card cardC mb-2">
@@ -103,7 +106,7 @@ fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
         }   
 })
 .catch((err)=> {
-    console.log(err)
+    console.log(err, "hubo un error al ir al inicio")
 })
 
 
@@ -114,7 +117,7 @@ let btnHtml = document.querySelector('#htmlPosts')
 
 
 btnAll.addEventListener("click", () => {
-    fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
+    fetch("http://localhost:8080/post/")
 .then((response) => {
     return response.json()
 })
@@ -123,11 +126,11 @@ btnAll.addEventListener("click", () => {
     let template=""
     let contador = 0
 
-    for(post in response){
-        let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
+    for(post in response.data.posts){
+        let {photo, userName, title, tag, content, pph, date, readTime }=  response.data.posts[post]
         
         contador++
-        if (contador == Object.keys(response).length){
+        if (contador == Object.keys(response.data.posts).length){
             console.log('entro al if')
                 template += `
                 <div class="card cardC mb-2">
@@ -224,28 +227,30 @@ btnAll.addEventListener("click", () => {
 })
 
 btnJS.addEventListener("click", () => {
-    fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
+    fetch("http://localhost:8080/post/")
 .then((response) => {
     // console.log(response)
     return response.json()
 })
 .then((response) => {
-    // console.log(response)
+     console.log(response)
     
     let template=""
     let bandera= ''
     
 
-    for(post in response){
-        let {tag,title}=  response[post]
+    for(post in response.data.posts){
+        let {tag, title}=  response.data.posts[post]
+
+        console.log(title)
 
         if (tag.toLowerCase() === "javascript"){
-            bandera= response[post].title
+            bandera = response.data.posts[post][title]
         } 
     }
 
-    for(post in response){
-        let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
+    for(post in response.data.posts){
+        let {photo, userName, title, tag, content, pph, date, readTime }=  response.data.posts[post]
 
         if (bandera === title){
             console.log('entre')
@@ -346,7 +351,7 @@ btnJS.addEventListener("click", () => {
 })
 
 btnHtml.addEventListener("click", () => {
-    fetch("https://devto-8117c-default-rtdb.firebaseio.com/posts.json")
+    fetch("http://localhost:8080/post/")
 .then((response) => {
     console.log(response)
     return response.json()
@@ -358,17 +363,19 @@ btnHtml.addEventListener("click", () => {
     let bandera= ''
     
 
-    for(post in response){
-        let {tag,title}=  response[post]
+    for(post in response.data.posts){
+        let {tag, title}=  response.data.posts[post]
+
+        console.log(title)
 
         if (tag.toLowerCase() === "html"){
-            bandera= response[post].title
+            bandera = response.data.posts[post][title]
         } 
     }
 
-    for(post in response){
-        let {photo, userName, title, tag, content, pph, date, readTime }=  response[post]
-        
+    for(post in response.data.posts){
+        let {photo, userName, title, tag, content, pph, date, readTime }=  response.data.posts[post]
+
         
         if (bandera === title){
             if(tag.toLowerCase() === "html"){

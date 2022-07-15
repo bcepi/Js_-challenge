@@ -2,10 +2,11 @@
 
 let url= window.location.search.substring(13)
 console.log(url)
+console.log(url)
 
 
 
-fetch (`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
+fetch (`"http://localhost:8080/post/${url}`)
 .then((response) => {
     if(!response.ok){
         console.log(response)

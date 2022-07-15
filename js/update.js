@@ -1,7 +1,7 @@
 let url= window.location.search.substring(9)
 //console.log(url)
 //update.html?response-N4t5up9edBD9pqRRWgX
-fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`)
+fetch(`http://localhost:8080/post/${url}`)
 .then((response)=>{
     console.log("ya entré")
     if (!response.ok){
