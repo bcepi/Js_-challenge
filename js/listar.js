@@ -10,7 +10,7 @@ fetch("http://localhost:8080/post/")
     let contador = 0
 
     for(post in response.data.posts){
-        let {photo, userName, title, tag, content, pph, date, readTime }=  response.data.posts[post]
+        let {photo, userName, title, tag, content, pph, date, readTime, _id }=  response.data.posts[post]
 
 
         // console.log( response.data.posts);
@@ -37,7 +37,7 @@ fetch("http://localhost:8080/post/")
                         </div>
                     </div>
                     <div class="row px-5">
-                        <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                        <a class="title_articleC aC" href="post.html?url=${_id}">
                             ${title}
                         </a>
                     </div>

@@ -1,21 +1,36 @@
-const id = await fetch("http://localhost:8080/post/")
+//http://127.0.0.1:5501/post.html?reponsepost=-N4oTPZlExYsU685Czlk
+
+
+let params = (new URL(document.location)).searchParams;
+let url = params.get('url'); // is the string "Jonathan Smith".
+
+// console.log(url)
+
+
+fetch (`http://localhost:8080/post/${url}`)
 .then((response) => {
-    console.log(response.json())
+    if(!response.ok){
+        console.log(response)
+        throw new Error(
+            'Ups!'
+        )
+    } else {
+        return response.json()
+    }
 })
 .then((response) => {
+    console.log(response.data.post)
     
-    
+
+    let {photo, userName, title, tag, content, pph, date, readTime}=  response.data.post
+    // BereNote: Se extrajo el codigo del documento post.html linea 162
 
     let template=""
-
-    let {photo, userName, title, tag, content, pph, date, readTime}=  response
-    // BereNote: Se extrajo el codigo del documento post.html linea 162
 
     template += `
             <div class="col-12 d-lg-none">
                 <img class="top-img" src="${photo}" alt="">
             </div>
-
             <div class="d-none d-lg-flex col-lg-12">
                 <img class="top-img-desk" src="${photo}" alt="">
             </div>
@@ -23,7 +38,6 @@ const id = await fetch("http://localhost:8080/post/")
             <!--wrapper del resto del doc-->
         <!--PADDING al POST-->
             <div class="wrapper p-4">
-
             <!--detalles del post-->
             <div class="post-details">
                 <div class="row">
@@ -70,13 +84,11 @@ const id = await fetch("http://localhost:8080/post/")
                             <a class="tittle-box__tags__related1" href="#">${tag}</a>
                         </div>
                     </div>
-
                     <!--contenedor de texto del post-->
                     <div class="text-container">
                         <p>${content}</p>
                         <p>Originally published at <a href="#">https://prplcode.dev</a></p>
                     </div>
-
                     <!--titulo caja de comentarios-->
                     <div>
                         <div class="comment">
@@ -84,12 +96,10 @@ const id = await fetch("http://localhost:8080/post/")
                             <button class="comment__subscribe-btn">Subscribe</button>
                         </div>
                     </div>
-
                     
                     <!--READ NEXT BOX-->
                 </div>
             </div>
-
             <div class="read-next">
                         <div class="row">
                             <div class="col-lg-1"></div>
@@ -107,7 +117,6 @@ const id = await fetch("http://localhost:8080/post/")
                                     <p class="read-next__post-info">Tina Huynh - 30 abr</p>
                                 </a>
                             </div>
-
                             <div class="col-lg-1"></div>
                             <div class="col-2 col-lg-1">
                                 <img class="read-next__user-img" src="images/user-elsa.webp" alt="">
@@ -117,7 +126,6 @@ const id = await fetch("http://localhost:8080/post/")
                                     <p class="read-next__post-info">Elsa - 17 abr</p>
                                 </a>
                             </div>
-
                             <div class="col-lg-1"></div>
                             <div class="col-2 col-lg-1">
                                 <img class="read-next__user-img" src="images/user-efraim.webp" alt="">
@@ -127,7 +135,6 @@ const id = await fetch("http://localhost:8080/post/")
                                     <p class="read-next__post-info">Efraim - 27 abr</p>
                                 </a>
                             </div>
-
                             <div class="col-lg-1"></div>
                             <div class="col-2 col-lg-1">
                                 <img class="read-next__user-img" src="images/user-michael.webp" alt="">
@@ -141,8 +148,6 @@ const id = await fetch("http://localhost:8080/post/")
                     </div>
                     
                 </div> 
-
-
             `
     
     document.querySelector('#postBody').innerHTML = template
@@ -151,7 +156,6 @@ const id = await fetch("http://localhost:8080/post/")
     templateRigthCol+= `
     
         <!-- columna derecha  -->
-
         <!--card mobile-->
             <div class="d-lg-none card p-3 col-lg-12">
                 <div class="card card-user">
@@ -173,7 +177,6 @@ const id = await fetch("http://localhost:8080/post/")
                             I know languages like Python, Bash, and JavaScript, and also libraries for JavaScript like anime.js, Chartist.js, Puppeteer, and framework like Electron.js
                         </div>
                     </div>
-
                     <div class="row p-1">
                         <div class="col-7 ptext">LOCATION</div>
                         <div class="col-6">Ukraine, Kyiv</div>
@@ -192,7 +195,6 @@ const id = await fetch("http://localhost:8080/post/")
                     </div>
                 </div>
             </div>
-
         <!--desktop-->
             <div class=" d-lg-flex card p-3 col-lg-9 carda">
                 <div>
@@ -205,7 +207,6 @@ const id = await fetch("http://localhost:8080/post/")
                             <h3>${userName}</h3>
                         </div>
                     </div>
-
                     <div class="row p-2 m-auto">
                         <button type="button" class="btnN btn-primary">Follow</button>
                     </div>
@@ -236,7 +237,6 @@ const id = await fetch("http://localhost:8080/post/")
                     </div>
                 </div>
             </div>
-
         <!--more of mobile-->
             <div class="d-lg-none card p-3 col-lg-12">
                 <div class="row">
@@ -255,9 +255,7 @@ const id = await fetch("http://localhost:8080/post/")
                     <span class="down pb-2">#discuss #career #watercooler</span>
                 </div>
             </div>
-
         <!--more of desktop-->
-
            
     `
 
@@ -265,4 +263,3 @@ const id = await fetch("http://localhost:8080/post/")
 
 }).catch((err)=> {
     console.log(err)})
-

@@ -1,0 +1,48 @@
+#closeForm {
+  border: none;
+  border-radius: 100%;
+}
+
+#form {
+  margin-top: 3.5rem;
+  background-color: white;
+  margin-left: 1rem;
+  border-radius: .5rem;
+}
+
+#login__card {
+  border-radius: 1rem;
+  background: #777c7c;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(119, 124, 124, 0.292052)), color-stop(55%, rgba(185, 205, 205, 0.320063)), to(rgba(240, 235, 225, 0.1632)));
+  background: linear-gradient(0deg, rgba(119, 124, 124, 0.292052) 0%, rgba(185, 205, 205, 0.320063) 55%, rgba(240, 235, 225, 0.1632) 100%);
+}
+
+#login__button {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login__button::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(../images/iconmonstr-arrow-right-thin.svg);
+  -webkit-transition: width 200ms, margin-left 200ms;
+  transition: width 200ms, margin-left 200ms;
+}
+
+#login__button:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+/*# sourceMappingURL=login.css.map */
