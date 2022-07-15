@@ -1,4 +1,4 @@
-fetch("http://localhost:8080/post/")
+const id = await fetch("http://localhost:8080/post/")
 .then((response) => {
     console.log(response.json())
 })
