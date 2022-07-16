@@ -22,7 +22,7 @@ fetch (`http://localhost:8080/post/${url}`)
     console.log(response.data.post)
     
 
-    let {photo, userName, title, tag, content, pph, date, readTime}=  response.data.post
+    let {photo, userName, title, tag, content, pph, date, readTime, _id}=  response.data.post
     // BereNote: Se extrajo el codigo del documento post.html linea 162
 
     let template=""
@@ -44,7 +44,7 @@ fetch (`http://localhost:8080/post/${url}`)
                 <!--editBOX-->   
                  <div  class="col-12 d-lg-none">
                     <div id="editBox" class ="d-lg-flex justify-content-around align-items-center">
-                        <a class="linkStyle" href="update.html?response${url}">Edit</a>
+                        <a class="linkStyle" href="update.html?url=${_id}">Edit</a>
                         <a class="linkStyle" href="#">Manage</a>
                         <a class="linkStyle" href="#">Stats</a>
                      </div>
@@ -65,7 +65,7 @@ fetch (`http://localhost:8080/post/${url}`)
                     <!--editBOX-->
                     <div  class="col-lg-3">
                         <div id="editBox" class ="d-none d-lg d-lg-flex justify-content-around align-items-center">
-                            <a class="linkStyle" href="update.html?response${url}">Edit</a>
+                            <a class="linkStyle" href="update.html?url=${_id}">Edit</a>
                             <a class="linkStyle" href="#">Manage</a>
                             <a class="linkStyle" href="#">Stats</a>
                         </div>
