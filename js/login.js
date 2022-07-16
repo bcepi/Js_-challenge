@@ -5,6 +5,8 @@ const buttonSignin = document.querySelector("#signin__button")
 const emailInput = document.querySelector("#typeEmail")
 const passwordlInput = document.querySelector("#typePassword")
 
+// const token = localStorage.geetItem("token")
+
 buttonSignin.addEventListener("click", async (event) =>{
     console.log("prueba click")
     event.preventDefault()
@@ -20,7 +22,8 @@ buttonSignin.addEventListener("click", async (event) =>{
         method: 'POST',
         body: JSON.stringify(dataBackend),
         headers: {
-                "Content-type": "application/json; charset=UTF-8"
+                "Content-type": "application/json; charset=UTF-8",
+                "Authorization": `"Bearer " ${token}`
             }
         }) 
         .then((response) => {
@@ -32,8 +35,6 @@ buttonSignin.addEventListener("click", async (event) =>{
         })
 
 } )
-
-
 
 buttonLogin.addEventListener("click", async (event) =>{
     event.preventDefault()
@@ -48,7 +49,8 @@ buttonLogin.addEventListener("click", async (event) =>{
     const data = await fetch(login_url,  {
         method: "Post",
         headers: {
-            "Content-Type" : "application/json"
+            "Content-Type" : "application/json",
+            // "Authorization" : `"Bearer "${token}`
         },
         body: JSON.stringify(dataBackend)
     })
