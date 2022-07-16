@@ -1,5 +1,6 @@
-let url= window.location.search.substring(9)
-//console.log(url)
+let params = (new URL(document.location)).searchParams;
+let url = params.get('url'); 
+console.log(url)
 //update.html?response-N4t5up9edBD9pqRRWgX
 fetch(`http://localhost:8080/post/${url}`)
 .then((response)=>{
@@ -11,8 +12,10 @@ fetch(`http://localhost:8080/post/${url}`)
     }
 })
 .then((response) =>{
-    console.log(response)
-    let {photo, userName, title, tag, content, date, pph, readTime} = response
+    console.log(response.data)
+
+    let {photo, userName, title, tag, content, pph, date, readTime, _id }=  response.data.post
+    console.log(userName)
     document.querySelector("#photo").value = photo
     document.querySelector("#userName").value = userName
     document.querySelector("#title").value = title
@@ -22,6 +25,7 @@ fetch(`http://localhost:8080/post/${url}`)
     console.log(date)
     document.querySelector("#pph").value = pph
     document.querySelector("#readTime").value = readTime
+    
 })
 .catch((Err)=>{
     console.log(Err)
@@ -53,7 +57,7 @@ btnUpdate.addEventListener("click",()=>{
             readTime: readTime
         }
         console.log(newComment)
-        fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`, {
+        fetch(`http://localhost:8080/post/${url}`, {
             method: 'PATCH',
             body: JSON.stringify(newComment),
             headers: {
@@ -81,7 +85,7 @@ btnEliminar.addEventListener("click", ()=>{
     if(respuesta == false){
         window.location.pathname = 'index.html' 
     } else{
-        fetch(`https://devto-8117c-default-rtdb.firebaseio.com/posts/${url}.json`,{
+        fetch(`http://localhost:8080/post/${url}`,{
             method: 'DELETE'
         })
         .then((response) =>{

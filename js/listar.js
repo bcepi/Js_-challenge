@@ -78,7 +78,7 @@ fetch("http://localhost:8080/post/")
                             </div>
                         </div>
                         <div class="row px-5">
-                            <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                            <a class="title_articleC aC" href="post.html?url=${_id}">
                                 ${title}
                             </a>
                         </div>
@@ -151,7 +151,7 @@ btnAll.addEventListener("click", () => {
                         </div>
                     </div>
                     <div class="row px-5">
-                        <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                        <a class="title_articleC aC" href="post.html?url=${_id}">
                             ${title}
                         </a>
                     </div>
@@ -194,7 +194,7 @@ btnAll.addEventListener("click", () => {
                             </div>
                         </div>
                         <div class="row px-5">
-                            <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                            <a class="title_articleC aC" href="post.html?url=${_id}">
                                 ${title}
                             </a>
                         </div>
@@ -274,7 +274,7 @@ btnJS.addEventListener("click", () => {
                         </div>
                     </div>
                     <div class="row px-5">
-                        <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                        <a class="title_articleC aC" href="post.html?url=${_id}">
                             ${title}
                         </a>
                     </div>
@@ -318,7 +318,7 @@ btnJS.addEventListener("click", () => {
                             </div>
                         </div>
                         <div class="row px-5">
-                            <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                            <a class="title_articleC aC" href="post.html?url=${_id}">
                                 ${title}
                             </a>
                         </div>
@@ -398,7 +398,7 @@ btnHtml.addEventListener("click", () => {
                         </div>
                     </div>
                     <div class="row px-5">
-                        <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                        <a class="title_articleC aC" href="post.html?url=${_id}">
                             ${title}
                         </a>
                     </div>
@@ -440,7 +440,7 @@ btnHtml.addEventListener("click", () => {
                             </div>
                         </div>
                         <div class="row px-5">
-                            <a class="title_articleC aC" href="post.html?reponsepost=${post}">
+                            <a class="title_articleC aC" href="post.html?url=${_id}">
                                 ${title}
                             </a>
                         </div>
