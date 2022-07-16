@@ -43,3 +43,27 @@ $margT:1rem;
     width: 24px;
     margin-left: 8px;
 }
+
+#signin__button{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#signin__button::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 24px;
+    overflow: hidden;
+    background-image: url(../images/iconmonstr-arrow-right-thin.svg);
+    transition: width 200ms, margin-left 200ms;
+
+}
+
+#signin__button:is(:hover,:focus)::after {
+    width: 24px;
+    margin-left: 8px;
+}
